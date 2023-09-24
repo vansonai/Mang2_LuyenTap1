@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2>tìm giá trị lớn nhất và giá trị trung bình</h2>
+<script>
+    let arr = [2, 51, 7, 82, 4, 2, 9, 11, 15, 9]
+    let max = arr[0];
+    let index;
+    let sum = arr[0]
+    for (let i = 1; i < arr.length; i++) {
+        if( max < arr[i]) {
+            max = arr[i];
+            index = i;
+        }
+        sum += arr[i]
+    }
+    let arrTb = sum / arr.length
+    console.log('max: '+max+ '    Trung binh = ' + arrTb)
+</script>
+</body>
+</html>

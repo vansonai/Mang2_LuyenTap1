@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2>Kiểm tra xem phần tử có nằm trong mảng không </h2>
+<script>
+  let a = +prompt('Nhap so luong phan tu');
+  let x = []
+  for (let i = 0; i < a; i++) {
+    let b = +prompt('Nhap gia tri')
+    x.push(b)
+  }
+  let v = +prompt('Nhap gia tri V')
+  for (let i = 0; i < x.length; i++) {
+    if (x[i] === v) {
+      alert('V is in the array')
+      break
+    } else {
+      alert('V is not in the array')
+      break;
+    }
+  }
+</script>
+</body>
+</html>

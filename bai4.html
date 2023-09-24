@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2> đảo ngược phần tử trong mảng</h2>
+<script>
+    let arr = [];
+    let a = +prompt('Nhap so phan tu')
+    for (let i = 0; i < a ; i++) {
+        let b = +prompt('Nhap phan tu')
+        arr.push(b)
+    }
+    console.log(arr)
+    let x = 0;
+    let y = arr.length - 1;
+    while (x < y) {
+        let z = arr[x];
+        arr[x] = arr[y];
+        arr[y] = z;
+        x++;
+        y--
+    }
+    console.log(arr)
+</script>
+</body>
+</html>

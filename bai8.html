@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2>Sắp xếp theo thứ tự giảm dần</h2>
+<script>
+    let x = +prompt('Nhap so phan tu');
+    let arr = [];
+
+    for (let i = 0; i < x; i++) {
+        let input = +prompt('Nhap gia tri');
+        arr.push(input)
+    }
+    console.log(arr)
+
+    for (let i = 0; i < arr.length; i++) {
+        for (let j = 1 + i; j < arr.length; j++) {
+            if (arr[i] < arr[j]) {
+                let b = arr[i];
+                arr[i] = arr[j];
+                arr[j] = b;
+            }
+        }
+    }
+    console.log(arr)
+</script>
+</body>
+</html>
